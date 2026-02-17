@@ -1,0 +1,228 @@
+<!doctype html>
+<html lang="es">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+  <meta name="description" content="Galeria estilo Pinterest de pueblos y ciudades de Murcia con Flexbox y Media Queries mobile first.">
+  <meta name="keywords" content="Murcia, pueblos de Murcia, ciudades de Murcia, flexbox, media queries, pinterest">
+  <meta name="author" content="Jose">
+  <meta name="robots" content="index,follow">
+  <meta property="og:title" content="Pinterest de Murcia | Flexbox">
+  <meta property="og:description" content="Tablon visual de municipios murcianos con interacciones y diseno responsive.">
+  <meta property="og:type" content="website">
+  <title>Pinterest de Murcia | Flexbox</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Manrope:wght@400;600;700;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="./styles.css">
+</head>
+<body>
+  <div class="page">
+    <header class="site-header">
+      <div class="brand">
+        <span class="brand-dot" aria-hidden="true"></span>
+        <h1>Pinterest de Murcia</h1>
+      </div>
+      <p class="subtitle">Pueblos y ciudades para escapadas de finde</p>
+    </header>
+
+    <aside class="site-aside" aria-label="Menu lateral">
+      <nav class="menu">
+        <a href="#" class="menu-link is-active">Explorar</a>
+        <a href="#" class="menu-link">Favoritos</a>
+        <a href="#" class="menu-link">Rutas</a>
+        <a href="#" class="menu-link">Gastronomia</a>
+      </nav>
+      <section class="panel">
+        <h2>Consejo rapido</h2>
+        <p>Marca con corazon tus destinos preferidos y se ordenaran al principio.</p>
+      </section>
+    </aside>
+
+    <main class="site-main" aria-label="Galeria principal">
+      <div id="gallery" class="gallery">
+        <article class="card" data-id="murcia" data-order="0">
+          <div class="media-wrap">
+            <img src="https://images.unsplash.com/photo-1523906834658-6e24ef2386f9?auto=format&fit=crop&w=1000&q=80" alt="Catedral y centro urbano de Murcia">
+            <div class="overlay">
+              <p>Murcia capital: casco historico y ambiente universitario.</p>
+              <div class="overlay-actions">
+                <button class="icon-btn like-btn" type="button" aria-label="Marcar como me gusta" title="Me gusta">
+                  <span aria-hidden="true">♡</span>
+                </button>
+                <a class="icon-btn ext-btn" href="https://es.wikipedia.org/wiki/Murcia" target="_blank" rel="noopener noreferrer" aria-label="Abrir enlace de Murcia" title="Abrir enlace exterior">
+                  <span aria-hidden="true">↗</span>
+                </a>
+              </div>
+            </div>
+          </div>
+          <div class="card-body">
+            <h3>Murcia</h3>
+            <p>Capital regional junto al rio Segura.</p>
+            <button class="visit-btn" type="button">Marcar visita</button>
+          </div>
+        </article>
+
+        <article class="card" data-id="cartagena" data-order="1">
+          <div class="media-wrap">
+            <img src="https://images.unsplash.com/photo-1558981403-c5f9899a28bc?auto=format&fit=crop&w=1000&q=80" alt="Puerto y zona historica de Cartagena">
+            <div class="overlay">
+              <p>Cartagena: teatro romano, puerto y muralla del mar.</p>
+              <div class="overlay-actions">
+                <button class="icon-btn like-btn" type="button" aria-label="Marcar como me gusta" title="Me gusta">
+                  <span aria-hidden="true">♡</span>
+                </button>
+                <a class="icon-btn ext-btn" href="https://es.wikipedia.org/wiki/Cartagena_(Espa%C3%B1a)" target="_blank" rel="noopener noreferrer" aria-label="Abrir enlace de Cartagena" title="Abrir enlace exterior">
+                  <span aria-hidden="true">↗</span>
+                </a>
+              </div>
+            </div>
+          </div>
+          <div class="card-body">
+            <h3>Cartagena</h3>
+            <p>Ciudad portuaria con herencia romana y militar.</p>
+            <button class="visit-btn" type="button">Marcar visita</button>
+          </div>
+        </article>
+
+        <article class="card" data-id="lorca" data-order="2">
+          <div class="media-wrap">
+            <img src="https://images.unsplash.com/photo-1590490360182-c33d57733427?auto=format&fit=crop&w=1000&q=80" alt="Castillo y skyline de Lorca">
+            <div class="overlay">
+              <p>Lorca: su fortaleza domina todo el valle del Guadalentin.</p>
+              <div class="overlay-actions">
+                <button class="icon-btn like-btn" type="button" aria-label="Marcar como me gusta" title="Me gusta">
+                  <span aria-hidden="true">♡</span>
+                </button>
+                <a class="icon-btn ext-btn" href="https://es.wikipedia.org/wiki/Lorca" target="_blank" rel="noopener noreferrer" aria-label="Abrir enlace de Lorca" title="Abrir enlace exterior">
+                  <span aria-hidden="true">↗</span>
+                </a>
+              </div>
+            </div>
+          </div>
+          <div class="card-body">
+            <h3>Lorca</h3>
+            <p>Arte barroco, Semana Santa y castillo medieval.</p>
+            <button class="visit-btn" type="button">Marcar visita</button>
+          </div>
+        </article>
+
+        <article class="card" data-id="aguilas" data-order="3">
+          <div class="media-wrap">
+            <img src="https://images.unsplash.com/photo-1507525428034-b723cf961d3e?auto=format&fit=crop&w=1000&q=80" alt="Costa de Aguilas en Murcia">
+            <div class="overlay">
+              <p>Aguilas: calas, castillo de San Juan y mucho sol.</p>
+              <div class="overlay-actions">
+                <button class="icon-btn like-btn" type="button" aria-label="Marcar como me gusta" title="Me gusta">
+                  <span aria-hidden="true">♡</span>
+                </button>
+                <a class="icon-btn ext-btn" href="https://es.wikipedia.org/wiki/%C3%81guilas" target="_blank" rel="noopener noreferrer" aria-label="Abrir enlace de Aguilas" title="Abrir enlace exterior">
+                  <span aria-hidden="true">↗</span>
+                </a>
+              </div>
+            </div>
+          </div>
+          <div class="card-body">
+            <h3>Aguilas</h3>
+            <p>Costa sur murciana con playas y carnaval famoso.</p>
+            <button class="visit-btn" type="button">Marcar visita</button>
+          </div>
+        </article>
+
+        <article class="card" data-id="caravaca" data-order="4">
+          <div class="media-wrap">
+            <img src="https://images.unsplash.com/photo-1516483638261-f4dbaf036963?auto=format&fit=crop&w=1000&q=80" alt="Vista historica de Caravaca de la Cruz">
+            <div class="overlay">
+              <p>Caravaca de la Cruz: ciudad santa y patrimonio.</p>
+              <div class="overlay-actions">
+                <button class="icon-btn like-btn" type="button" aria-label="Marcar como me gusta" title="Me gusta">
+                  <span aria-hidden="true">♡</span>
+                </button>
+                <a class="icon-btn ext-btn" href="https://es.wikipedia.org/wiki/Caravaca_de_la_Cruz" target="_blank" rel="noopener noreferrer" aria-label="Abrir enlace de Caravaca de la Cruz" title="Abrir enlace exterior">
+                  <span aria-hidden="true">↗</span>
+                </a>
+              </div>
+            </div>
+          </div>
+          <div class="card-body">
+            <h3>Caravaca de la Cruz</h3>
+            <p>Destino de peregrinacion con castillo basilica.</p>
+            <button class="visit-btn" type="button">Marcar visita</button>
+          </div>
+        </article>
+
+        <article class="card" data-id="cieza" data-order="5">
+          <div class="media-wrap">
+            <img src="https://images.unsplash.com/photo-1472396961693-142e6e269027?auto=format&fit=crop&w=1000&q=80" alt="Paisaje natural cerca de Cieza en Murcia">
+            <div class="overlay">
+              <p>Cieza: floracion de melocotoneros y ribera del Segura.</p>
+              <div class="overlay-actions">
+                <button class="icon-btn like-btn" type="button" aria-label="Marcar como me gusta" title="Me gusta">
+                  <span aria-hidden="true">♡</span>
+                </button>
+                <a class="icon-btn ext-btn" href="https://es.wikipedia.org/wiki/Cieza_(Espa%C3%B1a)" target="_blank" rel="noopener noreferrer" aria-label="Abrir enlace de Cieza" title="Abrir enlace exterior">
+                  <span aria-hidden="true">↗</span>
+                </a>
+              </div>
+            </div>
+          </div>
+          <div class="card-body">
+            <h3>Cieza</h3>
+            <p>Paisaje de huerta, rio y rutas de naturaleza.</p>
+            <button class="visit-btn" type="button">Marcar visita</button>
+          </div>
+        </article>
+
+        <article class="card" data-id="yecla" data-order="6">
+          <div class="media-wrap">
+            <img src="https://images.unsplash.com/photo-1473448912268-2022ce9509d8?auto=format&fit=crop&w=1000&q=80" alt="Vinedos y entorno de Yecla">
+            <div class="overlay">
+              <p>Yecla: vino, monte Arabi y patrimonio modernista.</p>
+              <div class="overlay-actions">
+                <button class="icon-btn like-btn" type="button" aria-label="Marcar como me gusta" title="Me gusta">
+                  <span aria-hidden="true">♡</span>
+                </button>
+                <a class="icon-btn ext-btn" href="https://es.wikipedia.org/wiki/Yecla" target="_blank" rel="noopener noreferrer" aria-label="Abrir enlace de Yecla" title="Abrir enlace exterior">
+                  <span aria-hidden="true">↗</span>
+                </a>
+              </div>
+            </div>
+          </div>
+          <div class="card-body">
+            <h3>Yecla</h3>
+            <p>Capital del mueble con cultura del vino.</p>
+            <button class="visit-btn" type="button">Marcar visita</button>
+          </div>
+        </article>
+
+        <article class="card" data-id="mazarron" data-order="7">
+          <div class="media-wrap">
+            <img src="https://images.unsplash.com/photo-1500375592092-40eb2168fd21?auto=format&fit=crop&w=1000&q=80" alt="Playa de Mazarron en Murcia">
+            <div class="overlay">
+              <p>Mazarron: bahia abierta, puertos y fondos marinos.</p>
+              <div class="overlay-actions">
+                <button class="icon-btn like-btn" type="button" aria-label="Marcar como me gusta" title="Me gusta">
+                  <span aria-hidden="true">♡</span>
+                </button>
+                <a class="icon-btn ext-btn" href="https://es.wikipedia.org/wiki/Mazarr%C3%B3n" target="_blank" rel="noopener noreferrer" aria-label="Abrir enlace de Mazarron" title="Abrir enlace exterior">
+                  <span aria-hidden="true">↗</span>
+                </a>
+              </div>
+            </div>
+          </div>
+          <div class="card-body">
+            <h3>Mazarron</h3>
+            <p>Zona costera ideal para buceo y playas amplias.</p>
+            <button class="visit-btn" type="button">Marcar visita</button>
+          </div>
+        </article>
+      </div>
+    </main>
+
+    <footer class="site-footer">
+      <p>Practica de Flexbox y Media Queries | Desarrollo de interfaces 2025-2026</p>
+    </footer>
+  </div>
+  <script src="./script.js"></script>
+</body>
+</html>
